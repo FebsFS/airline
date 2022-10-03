@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-class flyings(models.Model):
+class Flyings(models.Model):
     fr = models.CharField(max_length=255)
     to = models.CharField(max_length=255)
     wh = models.DateTimeField(auto_now_add=False)

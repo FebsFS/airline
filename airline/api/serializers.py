@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from main.models import flyings, Company
+from main.models import Flyings, Company
 
 
 class flysserializer(serializers.ModelSerializer):
     class Meta:
-        model = flyings
+        model = Flyings
         fields = ['fr', 'to', 'wh', 'price', 'co', 'Company_id']
 
 
